@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scatterplot Graph</title>
+    <style>
+      /* CSS styles go here */
+      .dot {
+        fill: steelblue;
+        stroke: white;
+      }
+      #tooltip {
+        position: absolute;
+        background-color: white;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.1s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Scatterplot Graph</h1>
+    <svg id="scatterplot"></svg>
+    <div id="legend">
+      <p><span style="color: steelblue">●</span> Cyclist Data</p>
+    </div>
+    <div id="tooltip"></div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
